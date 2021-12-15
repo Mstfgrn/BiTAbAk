@@ -9,13 +9,21 @@
 /* Begin PBXBuildFile section */
 		2B3D056F2764017600D2ED06 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D056E2764017600D2ED06 /* AppDelegate.swift */; };
 		2B3D05712764017600D2ED06 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05702764017600D2ED06 /* SceneDelegate.swift */; };
-		2B3D05732764017600D2ED06 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05722764017600D2ED06 /* ViewController.swift */; };
+		2B3D05732764017600D2ED06 /* AnasayfaVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05722764017600D2ED06 /* AnasayfaVc.swift */; };
 		2B3D05762764017600D2ED06 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3D05742764017600D2ED06 /* Main.storyboard */; };
 		2B3D05782764017D00D2ED06 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B3D05772764017D00D2ED06 /* Assets.xcassets */; };
 		2B3D057B2764017D00D2ED06 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2B3D05792764017D00D2ED06 /* LaunchScreen.storyboard */; };
 		2B3D05862764017E00D2ED06 /* TechCareerCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05852764017E00D2ED06 /* TechCareerCaseTests.swift */; };
 		2B3D05902764017E00D2ED06 /* TechCareerCaseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D058F2764017E00D2ED06 /* TechCareerCaseUITests.swift */; };
 		2B3D05922764017E00D2ED06 /* TechCareerCaseUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05912764017E00D2ED06 /* TechCareerCaseUITestsLaunchTests.swift */; };
+		2B3D05A32767808E00D2ED06 /* YemekDetayVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05A22767808E00D2ED06 /* YemekDetayVc.swift */; };
+		2B3D05A727680CF200D2ED06 /* SepetVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05A627680CF200D2ED06 /* SepetVc.swift */; };
+		2B3D05AA27680FDA00D2ED06 /* Yemekler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05A927680FDA00D2ED06 /* Yemekler.swift */; };
+		2B3D05AF27681B2800D2ED06 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05AE27681B2800D2ED06 /* CollectionViewCell.swift */; };
+		2B3D05B2276A1E0400D2ED06 /* AnasayfaProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05B1276A1E0400D2ED06 /* AnasayfaProtocols.swift */; };
+		2B3D05B5276A220400D2ED06 /* AnasayfaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05B4276A220400D2ED06 /* AnasayfaInteractor.swift */; };
+		2B3D05B8276A247D00D2ED06 /* AnasayfaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05B7276A247D00D2ED06 /* AnasayfaPresenter.swift */; };
+		2B3D05BA276A333100D2ED06 /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05B9276A333100D2ED06 /* UIView + Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +47,7 @@
 		2B3D056B2764017600D2ED06 /* TechCareerCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechCareerCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B3D056E2764017600D2ED06 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2B3D05702764017600D2ED06 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2B3D05722764017600D2ED06 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2B3D05722764017600D2ED06 /* AnasayfaVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaVc.swift; sourceTree = "<group>"; };
 		2B3D05752764017600D2ED06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2B3D05772764017D00D2ED06 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B3D057A2764017D00D2ED06 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +57,14 @@
 		2B3D058B2764017E00D2ED06 /* TechCareerCaseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TechCareerCaseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B3D058F2764017E00D2ED06 /* TechCareerCaseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechCareerCaseUITests.swift; sourceTree = "<group>"; };
 		2B3D05912764017E00D2ED06 /* TechCareerCaseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechCareerCaseUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2B3D05A22767808E00D2ED06 /* YemekDetayVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayVc.swift; sourceTree = "<group>"; };
+		2B3D05A627680CF200D2ED06 /* SepetVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetVc.swift; sourceTree = "<group>"; };
+		2B3D05A927680FDA00D2ED06 /* Yemekler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Yemekler.swift; sourceTree = "<group>"; };
+		2B3D05AE27681B2800D2ED06 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		2B3D05B1276A1E0400D2ED06 /* AnasayfaProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaProtocols.swift; sourceTree = "<group>"; };
+		2B3D05B4276A220400D2ED06 /* AnasayfaInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaInteractor.swift; sourceTree = "<group>"; };
+		2B3D05B7276A247D00D2ED06 /* AnasayfaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaPresenter.swift; sourceTree = "<group>"; };
+		2B3D05B9276A333100D2ED06 /* UIView + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +115,13 @@
 		2B3D056D2764017600D2ED06 /* TechCareerCase */ = {
 			isa = PBXGroup;
 			children = (
+				2B3D05BB276A333900D2ED06 /* Extentions */,
+				2B3D05A827680FCB00D2ED06 /* Entity */,
+				2B3D05A427680CD000D2ED06 /* Sepet-Module */,
+				2B3D05A02767743700D2ED06 /* YemekDetay-Module */,
+				2B3D059E276773C200D2ED06 /* Anasayfa-Module */,
 				2B3D056E2764017600D2ED06 /* AppDelegate.swift */,
 				2B3D05702764017600D2ED06 /* SceneDelegate.swift */,
-				2B3D05722764017600D2ED06 /* ViewController.swift */,
 				2B3D05742764017600D2ED06 /* Main.storyboard */,
 				2B3D05772764017D00D2ED06 /* Assets.xcassets */,
 				2B3D05792764017D00D2ED06 /* LaunchScreen.storyboard */,
@@ -125,6 +145,106 @@
 				2B3D05912764017E00D2ED06 /* TechCareerCaseUITestsLaunchTests.swift */,
 			);
 			path = TechCareerCaseUITests;
+			sourceTree = "<group>";
+		};
+		2B3D059E276773C200D2ED06 /* Anasayfa-Module */ = {
+			isa = PBXGroup;
+			children = (
+				2B3D05B6276A246800D2ED06 /* Presenter */,
+				2B3D05B3276A21F300D2ED06 /* Interactor */,
+				2B3D05B0276A1DE500D2ED06 /* Protocols */,
+				2B3D05AB2768161200D2ED06 /* CollectionViewCell */,
+				2B3D059F276773CA00D2ED06 /* View */,
+			);
+			path = "Anasayfa-Module";
+			sourceTree = "<group>";
+		};
+		2B3D059F276773CA00D2ED06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B3D05722764017600D2ED06 /* AnasayfaVc.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B3D05A02767743700D2ED06 /* YemekDetay-Module */ = {
+			isa = PBXGroup;
+			children = (
+				2B3D05A12767807800D2ED06 /* View */,
+			);
+			path = "YemekDetay-Module";
+			sourceTree = "<group>";
+		};
+		2B3D05A12767807800D2ED06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B3D05A22767808E00D2ED06 /* YemekDetayVc.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B3D05A427680CD000D2ED06 /* Sepet-Module */ = {
+			isa = PBXGroup;
+			children = (
+				2B3D05A527680CDF00D2ED06 /* View */,
+			);
+			path = "Sepet-Module";
+			sourceTree = "<group>";
+		};
+		2B3D05A527680CDF00D2ED06 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B3D05A627680CF200D2ED06 /* SepetVc.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2B3D05A827680FCB00D2ED06 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				2B3D05A927680FDA00D2ED06 /* Yemekler.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		2B3D05AB2768161200D2ED06 /* CollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2B3D05AE27681B2800D2ED06 /* CollectionViewCell.swift */,
+			);
+			path = CollectionViewCell;
+			sourceTree = "<group>";
+		};
+		2B3D05B0276A1DE500D2ED06 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2B3D05B1276A1E0400D2ED06 /* AnasayfaProtocols.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2B3D05B3276A21F300D2ED06 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2B3D05B4276A220400D2ED06 /* AnasayfaInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2B3D05B6276A246800D2ED06 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2B3D05B7276A247D00D2ED06 /* AnasayfaPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2B3D05BB276A333900D2ED06 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				2B3D05B9276A333100D2ED06 /* UIView + Extensions.swift */,
+			);
+			path = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,9 +378,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B3D05732764017600D2ED06 /* ViewController.swift in Sources */,
+				2B3D05A32767808E00D2ED06 /* YemekDetayVc.swift in Sources */,
+				2B3D05732764017600D2ED06 /* AnasayfaVc.swift in Sources */,
 				2B3D056F2764017600D2ED06 /* AppDelegate.swift in Sources */,
+				2B3D05B5276A220400D2ED06 /* AnasayfaInteractor.swift in Sources */,
+				2B3D05B8276A247D00D2ED06 /* AnasayfaPresenter.swift in Sources */,
+				2B3D05B2276A1E0400D2ED06 /* AnasayfaProtocols.swift in Sources */,
+				2B3D05AF27681B2800D2ED06 /* CollectionViewCell.swift in Sources */,
+				2B3D05BA276A333100D2ED06 /* UIView + Extensions.swift in Sources */,
 				2B3D05712764017600D2ED06 /* SceneDelegate.swift in Sources */,
+				2B3D05A727680CF200D2ED06 /* SepetVc.swift in Sources */,
+				2B3D05AA27680FDA00D2ED06 /* Yemekler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

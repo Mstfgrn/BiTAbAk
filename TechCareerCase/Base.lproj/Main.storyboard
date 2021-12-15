@@ -1,24 +1,170 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jj1-My-ASl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Yemekler-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="AnasayfaVc" customModule="TechCareerCase" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="84K-Cg-Da6">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dAD-wg-4QO">
+                                    <size key="itemSize" width="180" height="250"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="yemekHucre" id="5eu-cy-xvM" customClass="CollectionViewCell" customModule="TechCareerCase" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pD6-y8-eLG">
+                                            <rect key="frame" x="0.0" y="0.0" width="180" height="250"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cSJ-C4-igk">
+                                                    <rect key="frame" x="1" y="24" width="178" height="128"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="128" id="E1y-QF-Ks7"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Ut5-4G-BpX">
+                                                    <rect key="frame" x="52.5" y="168" width="75.5" height="53"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YemekAdi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vP4-fK-n6B">
+                                                            <rect key="frame" x="0.0" y="0.0" width="75.5" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fiyati" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VlK-tl-ABc">
+                                                            <rect key="frame" x="17.5" y="32.5" width="40" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="Ut5-4G-BpX" firstAttribute="top" secondItem="cSJ-C4-igk" secondAttribute="bottom" constant="16" id="JQb-ci-d4V"/>
+                                                <constraint firstItem="cSJ-C4-igk" firstAttribute="top" secondItem="pD6-y8-eLG" secondAttribute="top" constant="24" id="c12-4a-GBF"/>
+                                                <constraint firstItem="cSJ-C4-igk" firstAttribute="leading" secondItem="pD6-y8-eLG" secondAttribute="leading" constant="1" id="iy9-3I-ECF"/>
+                                                <constraint firstItem="cSJ-C4-igk" firstAttribute="centerX" secondItem="pD6-y8-eLG" secondAttribute="centerX" id="rgH-BX-ts9"/>
+                                                <constraint firstItem="Ut5-4G-BpX" firstAttribute="centerX" secondItem="pD6-y8-eLG" secondAttribute="centerX" id="sbq-7x-aKR"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="yemekAdi" destination="vP4-fK-n6B" id="a6C-cD-Czm"/>
+                                            <outlet property="yemekFiyati" destination="VlK-tl-ABc" id="phR-Fj-UQN"/>
+                                            <outlet property="yemekImageView" destination="cSJ-C4-igk" id="o1A-2h-pwr"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="84K-Cg-Da6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8sS-Ny-8bN"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="84K-Cg-Da6" secondAttribute="trailing" id="KEF-4d-UKe"/>
+                            <constraint firstItem="84K-Cg-Da6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="gcI-do-XuZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="84K-Cg-Da6" secondAttribute="bottom" id="hiB-8h-c2A"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Yemekler" largeTitleDisplayMode="always" id="qJz-qd-PzH">
+                        <barButtonItem key="rightBarButtonItem" title="Item" image="sepet" id="dQm-Wj-7vK">
+                            <color key="tintColor" red="0.99607843137254903" green="0.7803921568627451" blue="0.37647058823529411" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <segue destination="gdm-gZ-kU9" kind="show" id="UbF-wR-Xrr"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="yemekCollectionView" destination="84K-Cg-Da6" id="EtH-mb-Qc4"/>
+                        <segue destination="ref-lk-zm6" kind="show" identifier="toDetay" id="Spx-bg-rJh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="944.92753623188412" y="81.696428571428569"/>
+        </scene>
+        <!--Yemek Detay Vc-->
+        <scene sceneID="JbB-2e-Vyr">
+            <objects>
+                <viewController id="ref-lk-zm6" customClass="YemekDetayVc" customModule="TechCareerCase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qhT-s4-1s6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="nNe-jj-8bS"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="OhS-jW-9VB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IVH-N5-7sl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="945" y="822"/>
+        </scene>
+        <!--Sepetim-->
+        <scene sceneID="Aa7-Ua-f9k">
+            <objects>
+                <viewController id="gdm-gZ-kU9" customClass="SepetVc" customModule="TechCareerCase" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="KbW-pF-Zde">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="LS8-HQ-ohR"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Sepetim" id="jH6-0j-RAz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uRy-0T-RdY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1835" y="82"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="stU-JL-fya">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jj1-My-ASl" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="YuN-0N-U3O">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="0.91372549020000005" green="0.69411764710000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="LargeTitleOffSet">
+                                <real key="value" value="110"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Op0-X8-M9q"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DqH-sy-nI5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="81.696428571428569"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="sepet" width="41" height="41"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
