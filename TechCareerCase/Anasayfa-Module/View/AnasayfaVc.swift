@@ -18,6 +18,7 @@ class AnasayfaVc: UIViewController {
         super.viewDidLoad()
         textAtt()
         collectionViewSetup()
+        //AnasayfaRouter.createModule(ref: self)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -30,10 +31,11 @@ class AnasayfaVc: UIViewController {
     
     func textAtt(){
         let titleAttributes = [
-            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 30, weight: .bold)
+            NSAttributedString.Key.font: UIFont.systemFont(ofSize: 29, weight: .bold)
         ]
         self.navigationController?.navigationBar.titleTextAttributes = titleAttributes
     }
+    
     func collectionViewSetup(){
         let y = Yemekler(yemekID: "1", yemekAdi: "mercimek", yemekResimAdi: "", yemekFiyat: "15.99 ₺")
         let y1 = Yemekler(yemekID: "2", yemekAdi: "mercimek", yemekResimAdi: "", yemekFiyat: "15.99 ₺")
@@ -64,11 +66,12 @@ extension AnasayfaVc: UICollectionViewDelegate, UICollectionViewDataSource{
         cell.yemekAdi.text = yemek.yemekAdi
         cell.yemekFiyati.text = yemek.yemekFiyat
         return cell
-        
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath)
+        let yemek = yemekliste[indexPath.row]
         cell?.isUserInteractionEnabled = false
+        performSegue(withIdentifier: "toDetay", sender: yemek)
         cell?.startTappedAnimation(with: { [weak self] finish in
             if finish {
                 cell?.isUserInteractionEnabled = true

@@ -101,7 +101,7 @@
             </objects>
             <point key="canvasLocation" x="944.92753623188412" y="81.696428571428569"/>
         </scene>
-        <!--Yemek Detay Vc-->
+        <!--Detay-->
         <scene sceneID="JbB-2e-Vyr">
             <objects>
                 <viewController id="ref-lk-zm6" customClass="YemekDetayVc" customModule="TechCareerCase" customModuleProvider="target" sceneMemberID="viewController">
@@ -111,7 +111,7 @@
                         <viewLayoutGuide key="safeArea" id="nNe-jj-8bS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="OhS-jW-9VB"/>
+                    <navigationItem key="navigationItem" title="Detay" id="OhS-jW-9VB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IVH-N5-7sl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -145,11 +145,6 @@
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="number" keyPath="LargeTitleOffSet">
-                                <real key="value" value="110"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

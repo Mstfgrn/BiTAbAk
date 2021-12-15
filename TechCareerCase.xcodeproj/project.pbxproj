@@ -24,6 +24,7 @@
 		2B3D05B5276A220400D2ED06 /* AnasayfaInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05B4276A220400D2ED06 /* AnasayfaInteractor.swift */; };
 		2B3D05B8276A247D00D2ED06 /* AnasayfaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05B7276A247D00D2ED06 /* AnasayfaPresenter.swift */; };
 		2B3D05BA276A333100D2ED06 /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05B9276A333100D2ED06 /* UIView + Extensions.swift */; };
+		2B3D05BE276A430700D2ED06 /* AnasayfaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05BD276A430700D2ED06 /* AnasayfaRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		2B3D05B4276A220400D2ED06 /* AnasayfaInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaInteractor.swift; sourceTree = "<group>"; };
 		2B3D05B7276A247D00D2ED06 /* AnasayfaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaPresenter.swift; sourceTree = "<group>"; };
 		2B3D05B9276A333100D2ED06 /* UIView + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
+		2B3D05BD276A430700D2ED06 /* AnasayfaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 		2B3D059E276773C200D2ED06 /* Anasayfa-Module */ = {
 			isa = PBXGroup;
 			children = (
+				2B3D05BC276A42F500D2ED06 /* Router */,
 				2B3D05B6276A246800D2ED06 /* Presenter */,
 				2B3D05B3276A21F300D2ED06 /* Interactor */,
 				2B3D05B0276A1DE500D2ED06 /* Protocols */,
@@ -245,6 +248,14 @@
 				2B3D05B9276A333100D2ED06 /* UIView + Extensions.swift */,
 			);
 			path = Extentions;
+			sourceTree = "<group>";
+		};
+		2B3D05BC276A42F500D2ED06 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2B3D05BD276A430700D2ED06 /* AnasayfaRouter.swift */,
+			);
+			path = Router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -378,6 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B3D05BE276A430700D2ED06 /* AnasayfaRouter.swift in Sources */,
 				2B3D05A32767808E00D2ED06 /* YemekDetayVc.swift in Sources */,
 				2B3D05732764017600D2ED06 /* AnasayfaVc.swift in Sources */,
 				2B3D056F2764017600D2ED06 /* AppDelegate.swift in Sources */,
