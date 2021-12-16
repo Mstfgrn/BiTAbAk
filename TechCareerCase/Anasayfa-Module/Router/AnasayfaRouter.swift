@@ -7,7 +7,7 @@
 
 import Foundation
 
-/*class AnasayfaRouter : PresenterToRouterAnasayfaProtocol {
+class AnasayfaRouter : PresenterToRouterAnasayfaProtocol {
     static func createModule(ref: AnasayfaVc) {
         let presenter : ViewToPresenterAnasayfaProtocol & InteractorToPresenterAnasayfaProtocol = AnasayfaPresenter()
         
@@ -21,4 +21,4 @@ import Foundation
         //Interactor için
         ref.anasayfaPresenterNesnesi?.anasayfaInteractor?.anasayfaPresenter = presenter
     }
-}*/
+}

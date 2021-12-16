@@ -6,7 +6,7 @@ target 'TechCareerCase' do
   use_frameworks!
 
   # Pods for TechCareerCase
-  pod 'Alamofire', '~> 5.4'
+  pod 'Alamofire', '~> 4.4'
 
 
   target 'TechCareerCaseTests' do

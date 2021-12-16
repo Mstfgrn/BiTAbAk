@@ -5,7 +5,7 @@
 //  Created by MstfGrgn on 1.11.2021.
 //
 import UIKit
-
+import Foundation
 extension UIView {
     
     //I created this animation extention to give an animation when user clicks on cells on collectionView.
@@ -33,4 +33,20 @@ extension UIImageView {
             }
         }
     }
+    func loadImageUrl(urlString: String){
+        guard let url = URL(string: urlString) else{return}
+        
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url){
+                if let image = UIImage(data: data){
+                    DispatchQueue.main.async {
+                        self?.image = image
+                    }
+                }
+            }
+        }
+    }
+        
+        
+        
 }

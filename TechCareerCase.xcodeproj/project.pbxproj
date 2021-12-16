@@ -119,7 +119,6 @@
 				BB08E10EB3D4BD199F1D118E /* Pods-TechCareerCaseTests.debug.xcconfig */,
 				85B382FCB260C497B1B6E02A /* Pods-TechCareerCaseTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};

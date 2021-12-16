@@ -23,11 +23,11 @@ protocol PresenterToInteractorAnasayfaProtocol {
 }
 
 protocol InteractorToPresenterAnasayfaProtocol {
-    func presenteraVeriGonder(gorevlerListesi:Array<Yemekler>)
+    func presenteraVeriGonder(yemekListesi:Array<Yemekler>)
 }
 
 protocol PresenterToViewAnasayfaProtocol {
-    func vieweVeriGonder(gorevlerListesi:Array<Yemekler>)
+    func vieweVeriGonder(yemekListesi:Array<Yemekler>)
 }
 
 protocol PresenterToRouterAnasayfaProtocol {

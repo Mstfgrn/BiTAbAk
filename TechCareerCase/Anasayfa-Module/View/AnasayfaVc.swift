@@ -18,9 +18,12 @@ class AnasayfaVc: UIViewController {
         super.viewDidLoad()
         textAtt()
         collectionViewSetup()
-        //AnasayfaRouter.createModule(ref: self)
+        AnasayfaRouter.createModule(ref: self)
     }
-    
+    //Anasayfaya geri döndüğümüzde çalışır
+    override func viewWillAppear(_ animated: Bool) {
+        anasayfaPresenterNesnesi?.yemekleriYukle()
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetay" {
             let yemek = sender as? Yemekler
@@ -37,11 +40,6 @@ class AnasayfaVc: UIViewController {
     }
     
     func collectionViewSetup(){
-        let y = Yemekler(yemekID: "1", yemekAdi: "mercimek", yemekResimAdi: "", yemekFiyat: "15.99 ₺")
-        let y1 = Yemekler(yemekID: "2", yemekAdi: "mercimek", yemekResimAdi: "", yemekFiyat: "15.99 ₺")
-
-        yemekliste.append(y)
-        yemekliste.append(y1)
         yemekCollectionView.delegate = self
         yemekCollectionView.dataSource = self
         let layout = UICollectionViewFlowLayout()
@@ -62,11 +60,10 @@ extension AnasayfaVc: UICollectionViewDelegate, UICollectionViewDataSource{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "yemekHucre", for: indexPath) as! CollectionViewCell
         cell.layer.cornerRadius = 12
         cell.backgroundColor = .gray
-        //cell.yemekImageView.load(url: URL())
-        cell.yemekAdi.text = yemek.yemekAdi
-        cell.yemekFiyati.text = yemek.yemekFiyat
+        cell.configure(ylist: yemek)
         return cell
     }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath)
         let yemek = yemekliste[indexPath.row]
@@ -78,12 +75,21 @@ extension AnasayfaVc: UICollectionViewDelegate, UICollectionViewDataSource{
             }
         })
     }
-    
 }
+
 extension AnasayfaVc: UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
         let width = (UIScreen.main.bounds.width - 40) / 2
         return CGSize(width: width, height: 250)
+    }
+}
+
+extension AnasayfaVc : PresenterToViewAnasayfaProtocol {
+    func vieweVeriGonder(yemekListesi: Array<Yemekler>) {
+        self.yemekliste = yemekListesi
+        DispatchQueue.main.async {
+            self.yemekCollectionView.reloadData()
+        }
     }
 }

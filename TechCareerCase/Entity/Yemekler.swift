@@ -9,10 +9,10 @@ import Foundation
 
 // MARK: - Welcome
 class YemeklerCevap: Codable {
-    let yemekler: [YemeklerCevap]?
+    let yemekler: [Yemekler]?
     let success: Int?
 
-    init(yemekler: [YemeklerCevap]?, success: Int?) {
+    init(yemekler: [Yemekler]?, success: Int?) {
         self.yemekler = yemekler
         self.success = success
     }

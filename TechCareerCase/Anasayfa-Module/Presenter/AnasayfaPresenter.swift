@@ -23,8 +23,9 @@ class AnasayfaPresenter: ViewToPresenterAnasayfaProtocol{
     
 }
 extension AnasayfaPresenter: InteractorToPresenterAnasayfaProtocol{
-    func presenteraVeriGonder(gorevlerListesi: Array<Yemekler>) {
-        
+    func presenteraVeriGonder(yemekListesi: Array<Yemekler>) {
+        anasayfaView?.vieweVeriGonder(yemekListesi: yemekListesi)
+
     }
     
 }
