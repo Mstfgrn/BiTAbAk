@@ -59,7 +59,6 @@ extension AnasayfaVc: UICollectionViewDelegate, UICollectionViewDataSource{
         let yemek = yemekliste[indexPath.row]
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "yemekHucre", for: indexPath) as! CollectionViewCell
         cell.layer.cornerRadius = 12
-        cell.backgroundColor = .gray
         cell.configure(ylist: yemek)
         return cell
     }

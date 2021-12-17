@@ -16,11 +16,6 @@ class AnasayfaPresenter: ViewToPresenterAnasayfaProtocol{
         anasayfaInteractor?.tumYemekleriAl()
     }
     
-    func sil(sepetYemek_id: Int) {
-        anasayfaInteractor?.sepettenYemekSil(sepetYemek_id: sepetYemek_id)
-    }
-    
-    
 }
 extension AnasayfaPresenter: InteractorToPresenterAnasayfaProtocol{
     func presenteraVeriGonder(yemekListesi: Array<Yemekler>) {

@@ -26,10 +26,5 @@ class AnasayfaInteractor : PresenterToInteractorAnasayfaProtocol {
             }
         }
     }
-    
-    func sepettenYemekSil(sepetYemek_id: Int) {
-    }
-    
-    
 }
 

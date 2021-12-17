@@ -26,6 +26,10 @@
 		2B3D05B8276A247D00D2ED06 /* AnasayfaPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05B7276A247D00D2ED06 /* AnasayfaPresenter.swift */; };
 		2B3D05BA276A333100D2ED06 /* UIView + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05B9276A333100D2ED06 /* UIView + Extensions.swift */; };
 		2B3D05BE276A430700D2ED06 /* AnasayfaRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05BD276A430700D2ED06 /* AnasayfaRouter.swift */; };
+		2B3D05C5276BB83100D2ED06 /* YemekDetayProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05C4276BB83100D2ED06 /* YemekDetayProtocol.swift */; };
+		2B3D05C7276BB94A00D2ED06 /* YemekDetayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05C6276BB94A00D2ED06 /* YemekDetayPresenter.swift */; };
+		2B3D05C9276BBA2C00D2ED06 /* YemekDetayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05C8276BBA2C00D2ED06 /* YemekDetayInteractor.swift */; };
+		2B3D05CB276BBAD300D2ED06 /* YemekDetayRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05CA276BBAD300D2ED06 /* YemekDetayRouter.swift */; };
 		9F038F02F943EF9973E8814D /* Pods_TechCareerCase_TechCareerCaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A5CA96D57D7CFB336AC8BA /* Pods_TechCareerCase_TechCareerCaseUITests.framework */; };
 		F7D0E2CB4895501CFF36C493 /* Pods_TechCareerCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EDAABFFD6B4018479CE648 /* Pods_TechCareerCase.framework */; };
 /* End PBXBuildFile section */
@@ -70,6 +74,10 @@
 		2B3D05B7276A247D00D2ED06 /* AnasayfaPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaPresenter.swift; sourceTree = "<group>"; };
 		2B3D05B9276A333100D2ED06 /* UIView + Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView + Extensions.swift"; sourceTree = "<group>"; };
 		2B3D05BD276A430700D2ED06 /* AnasayfaRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnasayfaRouter.swift; sourceTree = "<group>"; };
+		2B3D05C4276BB83100D2ED06 /* YemekDetayProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayProtocol.swift; sourceTree = "<group>"; };
+		2B3D05C6276BB94A00D2ED06 /* YemekDetayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayPresenter.swift; sourceTree = "<group>"; };
+		2B3D05C8276BBA2C00D2ED06 /* YemekDetayInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayInteractor.swift; sourceTree = "<group>"; };
+		2B3D05CA276BBAD300D2ED06 /* YemekDetayRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayRouter.swift; sourceTree = "<group>"; };
 		2B59F22C6449190FB3B9FE6C /* Pods_TechCareerCaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechCareerCaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51EDAABFFD6B4018479CE648 /* Pods_TechCareerCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechCareerCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		526ECCEE2BA82852B4F37553 /* Pods-TechCareerCase-TechCareerCaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCareerCase-TechCareerCaseUITests.debug.xcconfig"; path = "Target Support Files/Pods-TechCareerCase-TechCareerCaseUITests/Pods-TechCareerCase-TechCareerCaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -203,6 +211,10 @@
 		2B3D05A02767743700D2ED06 /* YemekDetay-Module */ = {
 			isa = PBXGroup;
 			children = (
+				2B3D05C3276BB7EC00D2ED06 /* Router */,
+				2B3D05C2276BB7E400D2ED06 /* Presenter */,
+				2B3D05C1276BB7D900D2ED06 /* Interactor */,
+				2B3D05C0276BB7CB00D2ED06 /* Protocols */,
 				2B3D05A12767807800D2ED06 /* View */,
 			);
 			path = "YemekDetay-Module";
@@ -284,6 +296,38 @@
 			isa = PBXGroup;
 			children = (
 				2B3D05BD276A430700D2ED06 /* AnasayfaRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2B3D05C0276BB7CB00D2ED06 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2B3D05C4276BB83100D2ED06 /* YemekDetayProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2B3D05C1276BB7D900D2ED06 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				2B3D05C8276BBA2C00D2ED06 /* YemekDetayInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		2B3D05C2276BB7E400D2ED06 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				2B3D05C6276BB94A00D2ED06 /* YemekDetayPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2B3D05C3276BB7EC00D2ED06 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				2B3D05CA276BBAD300D2ED06 /* YemekDetayRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -537,12 +581,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B3D05C5276BB83100D2ED06 /* YemekDetayProtocol.swift in Sources */,
 				2B3D05BE276A430700D2ED06 /* AnasayfaRouter.swift in Sources */,
 				2B3D05A32767808E00D2ED06 /* YemekDetayVc.swift in Sources */,
 				2B3D05732764017600D2ED06 /* AnasayfaVc.swift in Sources */,
+				2B3D05CB276BBAD300D2ED06 /* YemekDetayRouter.swift in Sources */,
 				2B3D056F2764017600D2ED06 /* AppDelegate.swift in Sources */,
 				2B3D05B5276A220400D2ED06 /* AnasayfaInteractor.swift in Sources */,
+				2B3D05C7276BB94A00D2ED06 /* YemekDetayPresenter.swift in Sources */,
 				2B3D05B8276A247D00D2ED06 /* AnasayfaPresenter.swift in Sources */,
+				2B3D05C9276BBA2C00D2ED06 /* YemekDetayInteractor.swift in Sources */,
 				2B3D05B2276A1E0400D2ED06 /* AnasayfaProtocols.swift in Sources */,
 				2B3D05AF27681B2800D2ED06 /* CollectionViewCell.swift in Sources */,
 				2B3D05BA276A333100D2ED06 /* UIView + Extensions.swift in Sources */,

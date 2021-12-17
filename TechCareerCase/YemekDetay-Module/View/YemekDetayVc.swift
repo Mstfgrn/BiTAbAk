@@ -9,9 +9,13 @@ import UIKit
 
 class YemekDetayVc: UIViewController {
     var yemek: Yemekler?
+    
+    var yemekDetayPresenterNesnesi:ViewToPresenterYemekDetayProtocol?
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
     }
     
 }

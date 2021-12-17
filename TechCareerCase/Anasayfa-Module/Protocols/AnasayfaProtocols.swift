@@ -12,14 +12,12 @@ protocol ViewToPresenterAnasayfaProtocol {
     var anasayfaView:PresenterToViewAnasayfaProtocol? {get set}
     
     func yemekleriYukle()
-    func sil(sepetYemek_id: Int)
 }
 
 protocol PresenterToInteractorAnasayfaProtocol {
     var anasayfaPresenter:InteractorToPresenterAnasayfaProtocol? {get set}
     
     func tumYemekleriAl()
-    func sepettenYemekSil(sepetYemek_id: Int)
 }
 
 protocol InteractorToPresenterAnasayfaProtocol {
