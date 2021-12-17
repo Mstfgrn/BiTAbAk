@@ -15,7 +15,7 @@ class CollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var yemekFiyati: UILabel!
     
     func configure(ylist: Yemekler){
-        var imagename = ylist.yemekResimAdi!
+        let imagename = ylist.yemekResimAdi!
         yemekImageView.loadImageUrl(urlString: "http://kasimadalan.pe.hu/yemekler/resimler/\(imagename)")
         yemekAdi.text = ylist.yemekAdi
         yemekFiyati.text = "\(ylist.yemekFiyat ?? "0") ₺"

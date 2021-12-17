@@ -30,6 +30,7 @@
 		2B3D05C7276BB94A00D2ED06 /* YemekDetayPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05C6276BB94A00D2ED06 /* YemekDetayPresenter.swift */; };
 		2B3D05C9276BBA2C00D2ED06 /* YemekDetayInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05C8276BBA2C00D2ED06 /* YemekDetayInteractor.swift */; };
 		2B3D05CB276BBAD300D2ED06 /* YemekDetayRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05CA276BBAD300D2ED06 /* YemekDetayRouter.swift */; };
+		2B3D05D1276D4FCF00D2ED06 /* SepetProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D05D0276D4FCF00D2ED06 /* SepetProtocol.swift */; };
 		9F038F02F943EF9973E8814D /* Pods_TechCareerCase_TechCareerCaseUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61A5CA96D57D7CFB336AC8BA /* Pods_TechCareerCase_TechCareerCaseUITests.framework */; };
 		F7D0E2CB4895501CFF36C493 /* Pods_TechCareerCase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51EDAABFFD6B4018479CE648 /* Pods_TechCareerCase.framework */; };
 /* End PBXBuildFile section */
@@ -78,6 +79,7 @@
 		2B3D05C6276BB94A00D2ED06 /* YemekDetayPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayPresenter.swift; sourceTree = "<group>"; };
 		2B3D05C8276BBA2C00D2ED06 /* YemekDetayInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayInteractor.swift; sourceTree = "<group>"; };
 		2B3D05CA276BBAD300D2ED06 /* YemekDetayRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YemekDetayRouter.swift; sourceTree = "<group>"; };
+		2B3D05D0276D4FCF00D2ED06 /* SepetProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SepetProtocol.swift; sourceTree = "<group>"; };
 		2B59F22C6449190FB3B9FE6C /* Pods_TechCareerCaseTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechCareerCaseTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51EDAABFFD6B4018479CE648 /* Pods_TechCareerCase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechCareerCase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		526ECCEE2BA82852B4F37553 /* Pods-TechCareerCase-TechCareerCaseUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCareerCase-TechCareerCaseUITests.debug.xcconfig"; path = "Target Support Files/Pods-TechCareerCase-TechCareerCaseUITests/Pods-TechCareerCase-TechCareerCaseUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -231,6 +233,10 @@
 		2B3D05A427680CD000D2ED06 /* Sepet-Module */ = {
 			isa = PBXGroup;
 			children = (
+				2B3D05CF276D4FB000D2ED06 /* Interactor */,
+				2B3D05CE276D4FA700D2ED06 /* Router */,
+				2B3D05CD276D4F9A00D2ED06 /* Presenter */,
+				2B3D05CC276D4F8C00D2ED06 /* Protocols */,
 				2B3D05A527680CDF00D2ED06 /* View */,
 			);
 			path = "Sepet-Module";
@@ -330,6 +336,35 @@
 				2B3D05CA276BBAD300D2ED06 /* YemekDetayRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		2B3D05CC276D4F8C00D2ED06 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				2B3D05D0276D4FCF00D2ED06 /* SepetProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		2B3D05CD276D4F9A00D2ED06 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		2B3D05CE276D4FA700D2ED06 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		2B3D05CF276D4FB000D2ED06 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
 			sourceTree = "<group>";
 		};
 		F45D9994719DE0AD0310C983 /* Frameworks */ = {
@@ -596,6 +631,7 @@
 				2B3D05BA276A333100D2ED06 /* UIView + Extensions.swift in Sources */,
 				2B3D05712764017600D2ED06 /* SceneDelegate.swift in Sources */,
 				2B3D05A727680CF200D2ED06 /* SepetVc.swift in Sources */,
+				2B3D05D1276D4FCF00D2ED06 /* SepetProtocol.swift in Sources */,
 				2B3D05AA27680FDA00D2ED06 /* Yemekler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
