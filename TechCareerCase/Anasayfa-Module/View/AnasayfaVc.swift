@@ -20,10 +20,12 @@ class AnasayfaVc: UIViewController {
         collectionViewSetup()
         AnasayfaRouter.createModule(ref: self)
     }
+    
     //Anasayfaya geri döndüğümüzde çalışır
     override func viewWillAppear(_ animated: Bool) {
         anasayfaPresenterNesnesi?.yemekleriYukle()
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toDetay" {
             let yemek = sender as? Yemekler
