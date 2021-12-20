@@ -42,7 +42,9 @@ class SepetInteractor: PresenterToInteractorSepetProtocol{
                 do{
                     if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
                         print(json)
-                        self.tumSepetYemekleriAl(kullanici_adi: kullanici_adi)
+                        DispatchQueue.global().async {
+                            self.tumSepetYemekleriAl(kullanici_adi: kullanici_adi)
+                        }
                     }
                 }catch{
                     print(error.localizedDescription)
