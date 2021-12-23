@@ -26,7 +26,7 @@ class TableViewCell: UITableViewCell {
     func configure(slist: SepetYemekler){
         sepetImage.loadImageUrl(urlString: "http://kasimadalan.pe.hu/yemekler/resimler/\(slist.yemekResimAdi!)")
         sepetYemekAdi.text = slist.yemekAdi!
-        sepetUrunadet.text = slist.yemekSiparisAdet
+        sepetUrunadet.text = "Adet: \(slist.yemekSiparisAdet!)"
         sepetUrunFiyat.text = "\(slist.yemekFiyat ?? "0") ₺"
     }
 
