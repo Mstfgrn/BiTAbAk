@@ -64,6 +64,9 @@ extension SepetVc : UITableViewDelegate,UITableViewDataSource {
             
             let sepet = self.sepetliste[indexPath.row]
             self.sepetPresenterNesnesi?.sil(sepet_yemek_id: sepet.sepetYemekID!, kullanici_adi: sepet.kullaniciAdi!)
+            /*for s in self.sepetliste{
+                self.sepetPresenterNesnesi?.sil(sepet_yemek_id: s.sepetYemekID!, kullanici_adi: s.kullaniciAdi!)
+            }*/
         }
         
         return UISwipeActionsConfiguration(actions: [silAction])

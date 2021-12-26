@@ -23,10 +23,9 @@ class SepetInteractor: PresenterToInteractorSepetProtocol{
                     if let gelenListe = cevap.sepetYemekler {
                         self.sepetliste = gelenListe
                     }
-                    
                     self.sepetPresenter?.presenteraVeriGonder(sepetyemekListesi: self.sepetliste)
                 }catch{
-                    print(error.localizedDescription)
+                    self.sepetPresenter?.presenteraVeriGonder(sepetyemekListesi: [SepetYemekler]())
                 }
             }
         }
@@ -42,7 +41,9 @@ class SepetInteractor: PresenterToInteractorSepetProtocol{
                 do{
                     if let json = try JSONSerialization.jsonObject(with: data, options: []) as? [String:Any] {
                         print(json)
-                        self.tumSepetYemekleriAl(kullanici_adi: kullanici_adi)
+                        DispatchQueue.main.async {
+                            self.tumSepetYemekleriAl(kullanici_adi: kullanici_adi)
+                        }
                     }
                 }catch{
                     print(error.localizedDescription)
