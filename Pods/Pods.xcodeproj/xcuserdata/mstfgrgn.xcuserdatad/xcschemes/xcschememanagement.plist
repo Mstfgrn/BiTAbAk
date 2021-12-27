@@ -11,21 +11,21 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
-		<key>Pods-TechCareerCase-TechCareerCaseUITests.xcscheme</key>
+		<key>Pods-BiTAbAK-BiTAbAKUITests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>2</integer>
 		</dict>
-		<key>Pods-TechCareerCase.xcscheme</key>
+		<key>Pods-BiTAbAK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
 			<integer>1</integer>
 		</dict>
-		<key>Pods-TechCareerCaseTests.xcscheme</key>
+		<key>Pods-BiTAbAKTests.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

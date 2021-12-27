@@ -1,0 +1,6 @@
+framework module Pods_BiTAbAK {
+  umbrella header "Pods-BiTAbAK-umbrella.h"
+
+  export *
+  module * { export * }
+}

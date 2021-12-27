@@ -1,6 +1,0 @@
-framework module Pods_TechCareerCase_TechCareerCaseUITests {
-  umbrella header "Pods-TechCareerCase-TechCareerCaseUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
